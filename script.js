@@ -39,8 +39,24 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     // Menu hamburger
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    function closeMenu() {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+    }
+
     hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
       navMenu.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
     });
 
     function showNotification(message, isError = false) {
