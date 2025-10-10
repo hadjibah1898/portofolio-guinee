@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Bah Mamadou Djouldé, développeur Full-Stack MERN. Découvrez mes projets et compétences en développement web.">
+  <meta name="author" content="Bah Mamadou Djouldé">
+  <title>Portfolio – Bah Mamadou Djouldé</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>BAH MAMADOU DJOULDÉ</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">&#9776;</div>
+  </header>
+
+  <main>
+    <section id="accueil">
+      <h2>Bienvenue sur mon Portfolio</h2>
+      <p>Je suis <span class="typing"></span></p>
+    </section>
+
+    <section id="apropos">
+      <h2>À propos de moi</h2>
+      <p>
+        Développeur <strong>Full-Stack MERN</strong> passionné, 
+        je crée des applications web performantes et modernes 
+        avec <strong>React.js</strong>, <strong>Node.js</strong>, 
+        <strong>Express</strong> et <strong>MongoDB</strong>.  
+        Je recherche une opportunité pour mettre en pratique mes compétences et collaborer sur des projets innovants.
+      </p>
+      <div class="cv-button-container">
+        <a href="PDF/CV - Développeur MERN.pdf" target="_blank" download class="cv-button">Télécharger mon CV</a>
+      </div>
+    </section>
+
+    <section id="formation">
+      <h2>Formation & Diplômes</h2>
+      <div class="formation-container">
+        <div class="formation-item">
+          <h3>Certificat en Développement Web</h3>
+          <p><strong>Simplon Guinée</strong> | Mars 2025 - Septembre 2025</p>
+        </div>
+        <div class="formation-item">
+          <h3>Licence en Chimie</h3>
+          <p><strong>Université de Kindia</strong> | 2019 - 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Expériences et Projets</h2>
+      <div class="experience-container">
+
+        <div class="experience fade-in">
+          <h3>Projet QSL Guinée</h3>
+          <p>Application de scan pour vérifier la conformité des produits et lutter contre la contrefaçon.</p>
+          <ul>
+            <li><strong>Stack :</strong> Node.js, Express, MongoDB, React.</li>
+            <li><strong>Fonctionnalités :</strong> Scan de QR codes, reporting, interface d'administration.</li>
+            <li><a href="https://github.com/hadjibah1898/cheik-qualite" target="_blank">Voir le projet sur GitHub</a></li>
+          </ul>
+          <figure class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="image/Capture d’écran 2025-09-15 113130.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="image/Capture d’écran 2025-09-15 113529.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="image/Capture d’écran 2025-09-15 112948.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </figure>
+        </div>
+
+        <div class="experience fade-in">
+          <h3>Plateforme Immobilière</h3>
+          <p>Application web complète pour la gestion d'annonces de vente, location et colocation.</p>
+          <ul>
+            <li><strong>Stack :</strong> Node.js, Express, MongoDB, HTML, CSS, JavaScript.</li>
+            <li><strong>Fonctionnalités :</strong> CRUD d'annonces, recherche et filtres, interface utilisateur intuitive.</li>
+            <li><a href="https://github.com/hadjibah1898/projet-logement-guinee.git" target="_blank">Voir le projet sur GitHub</a></li>
+          </ul>
+          <figure class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="image/Capture d’écran 2025-09-15 113228.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="image/Capture d’écran 2025-09-15 112948.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="image/Capture d’écran 2025-09-15 112704.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contactez-moi</h2>
+      <form id="contactForm">
+        <input type="text" name="from_name" placeholder="Votre nom" required>
+        <input type="email" name="from_email" placeholder="Votre email" required>
+        <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div id="notification"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Mamadou Djouldé Oumar Bah – Tous droits réservés.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
