@@ -278,6 +278,86 @@ nav ul li a:hover {
   box-shadow: 0 6px 15px var(--box-shadow-hover-color);
 }
 
+/* Styles pour les certifications */
+.certification-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.certification-item {
+  width: 350px;
+  background: var(--white-color);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px var(--box-shadow-color);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.certification-item.award {
+  border-left: 4px solid #FFD700;
+  background: linear-gradient(135deg, #fff9e6 0%, var(--white-color) 100%);
+}
+
+.certification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px var(--box-shadow-hover-color);
+}
+
+.certification-detail {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Bannière de distinction */
+.distinction-banner {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.distinction-banner p {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.trophy-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(255, 215, 0, 0.6);
+  }
+}
+
+/* Badge pour projet primé */
+.project-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4);
+}
+
+
 .formation-item h3 {
   color: var(--primary-color);
   font-size: 1.2rem;
