@@ -79,10 +79,10 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     document.getElementById('contactForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      // À remplacer par vos propres IDs depuis EmailJS
-      const serviceID = 'service_swco486';
-      const templateID = 'template_u6bkyie';
-      const publicKey = '7VlYLJiSoP_C19nrg';
+      // IDs depuis .env
+      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       emailjs.sendForm(serviceID, templateID, this, publicKey)
           .then(() => {
